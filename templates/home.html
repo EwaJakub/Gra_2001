@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="/" method="POST" >
+        <h1>{{ctx.info}}</h1>
+        <label> Wynik gracza
+            <input type="text" name="player_points" value={{ctx.player_points}}>
+        </label>
+        <label> Wynik komputera
+            <input type="text" name="computer_points" value={{ctx.computer_points}}>
+            </label>
+        <br>
+         <label> Wynik rundy - gracz
+            <input type="text" name="round_player_points" value={{ctx.round_player_points}}>
+            </label>
+         <label> Wynik rundy - komputer
+            <input type="text" name="round_computer_points" value={{ctx.round_computer_points}}>
+            </label>
+        <br>
+        <label>Wybierz typ pierwszej kości
+           <select name="dice_1">
+               <option value="3"> D3 </option>
+               <option value="4"> D4 </option>
+               <option value="6"> D6 </option>
+               <option value="8"> D8 </option>
+               <option value="10"> D10 </option>
+               <option value="12"> D12 </option>
+               <option value="20"> D20 </option>
+               <option value="100"> D100 </option>
+           </select>
+       </label>Wybierz typ drugiej kości
+           <select name="dice_2">
+               <option value="3"> D3 </option>
+               <option value="4"> D4 </option>
+               <option value="6"> D6 </option>
+               <option value="8"> D8 </option>
+               <option value="10"> D10 </option>
+               <option value="12"> D12 </option>
+               <option value="20"> D20 </option>
+               <option value="100"> D100 </option>
+           </select>
+       </label>
+            <input type="submit" name="comment" value="sprawdź">
+    </form>
+</body>
+</html>
